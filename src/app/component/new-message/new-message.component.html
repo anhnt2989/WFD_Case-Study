@@ -18,7 +18,9 @@
     </div>
     <input #messageText name="" class="form-control type_msg" placeholder="Type your message...">
     <div class="input-group-append">
-      <span class="input-group-text send_btn"><a type="submit" (click)="onSubmit(messageText.value)"><i class="fas fa-paper-plane"></i></a></span>
+      <span class="input-group-text send_btn"><a type="submit"
+                                                 (click)="onSubmit(messageText.value);messageText.value=''"><i
+        class="fas fa-paper-plane"></i></a></span>
     </div>
   </div>
 </div>

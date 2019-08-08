@@ -67,7 +67,6 @@ export class MessageService {
     $(document).ready(() => {
       const scrollHeight = document.getElementById('all-message').scrollHeight;
       $('#all-message').scrollTop(scrollHeight);
-      console.log(scrollHeight);
     });
   }
 }
