@@ -3,11 +3,9 @@
     <li *ngFor="let mes of messageList" class="list-group-item list-group-item-action"
         [class.right-align]="mes.name === loginUser.name">
       <div id="message" class="list-group-item list-group-item-action">
-        <div><span><img src="{{mes.image}}" alt="userImage" width="40px" height="40px"></span><a href="#">  {{mes.name}}</a>
-          <span *ngIf="loginUser.status ==='online'" class="dot" id="online" aria-hidden="true"></span>
-          <span *ngIf="loginUser.status ==='offline'" class="dot" id="offline" aria-hidden="true"></span>
-          <span *ngIf="loginUser.status ==='idle'" class="dot" id="idle" aria-hidden="true"></span>
-          <span>    {{loginUser.status}}</span>
+        <div>
+          <span><img src="{{mes.image}}" alt="userImage" width="40px" height="40px"></span>
+          <a href="#">  {{mes.name}}</a>
         </div>
         <div>{{mes.createdTime}}</div>
         <div>{{mes.content}}</div>

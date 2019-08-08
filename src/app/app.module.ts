@@ -12,6 +12,7 @@ import {GroupviewComponent} from './component/groupview/groupview.component';
 import {SignUpComponent} from './component/sign-up/sign-up.component';
 import {UserComponent} from './component/user/user.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MDBBootstrapModule, MdbInput} from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,14 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     HeaderComponent,
     GroupviewComponent,
     SignUpComponent,
-    UserComponent
+    UserComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    MDBBootstrapModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

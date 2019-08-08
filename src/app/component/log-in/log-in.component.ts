@@ -28,6 +28,7 @@ export class LogInComponent implements OnInit {
       password: this.loginUserForm.value.password,
       name: this.loginUserForm.value.name,
       status: 'offline',
+      userImg: ''
     };
     console.log(this.loginUserForm);
     if (this.userService.login(this.user)) {

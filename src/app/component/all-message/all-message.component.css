@@ -28,7 +28,7 @@ img {
   background-color: #31ff21;
   border-radius: 50%;
   display: inline-block;
-  animation: ripple 1.8s infinite;
+  /*animation: ripple 1.8s infinite;*/
 }
 
 #offline {
@@ -37,7 +37,7 @@ img {
   background-color: #ff070c;
   border-radius: 50%;
   display: inline-block;
-  animation: ripple 1.8s infinite;
+  /*animation: ripple 1.8s infinite;*/
 }
 #idle {
   height: 10px;
@@ -45,7 +45,7 @@ img {
   background-color: #e7de0b;
   border-radius: 50%;
   display: inline-block;
-  animation: ripple 1.8s infinite;
+  /*animation: ripple 1.8s infinite;*/
 }
 @-webkit-keyframes ripple{
   0%{

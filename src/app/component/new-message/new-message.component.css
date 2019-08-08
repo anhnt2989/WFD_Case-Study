@@ -5,3 +5,7 @@ a {
 form {
   display: flex;
 }
+
+#form1 {
+  width: 700px;
+}

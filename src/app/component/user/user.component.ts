@@ -22,6 +22,7 @@ export class UserComponent implements OnInit {
       name: this.userRegisterForm.controls.name.value,
       password: this.userRegisterForm.controls.password.value,
       status: 'offline',
+      userImg: ''
     };
     this.userService.addtoUserList(this.newUser);
     console.log(this.userService.userList);

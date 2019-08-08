@@ -24,6 +24,7 @@ export class SignUpComponent implements OnInit {
       name: this.userRegisterForm.value.name,
       password: this.userRegisterForm.value.password,
       status: 'offline',
+      userImg: ''
     };
     this.userService.addtoUserList(this.newUser);
     console.log(this.userService.userList);
