@@ -16,7 +16,7 @@ export class UserService {
     // tslint:disable-next-line:max-line-length
     {username: 'admin2', name: 'Brad Pitt', password: 'admin2', status: 'offline', userImg: 'https://www.thesun.co.uk/wp-content/uploads/2019/08/NINTCHDBPICT000000761773-1.jpg'},
     // tslint:disable-next-line:max-line-length
-    {username: 'admin3', name: 'C. Hemsworth', password: 'admin3', status: 'offline', userImg: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU0ODUwMjQ0NjIwNzI0MDAx/chris-hemsworth-poses-during-a-photo-call-for-thor-ragnarok-on-october-15-2017-in-sydney-australia-photo-by-mark-metcalfe_getty-images-for-disney-square.jpg'},
+    {username: 'admin3', name: 'Chris Hemsworth', password: 'admin3', status: 'offline', userImg: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU0ODUwMjQ0NjIwNzI0MDAx/chris-hemsworth-poses-during-a-photo-call-for-thor-ragnarok-on-october-15-2017-in-sydney-australia-photo-by-mark-metcalfe_getty-images-for-disney-square.jpg'},
     // tslint:disable-next-line:max-line-length
     {username: 'admin4', name: 'Elizabeth Olsen', password: 'admin4', status: 'idle', userImg: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Elizabeth_Olsen1_%28cropped%29.jpg/170px-Elizabeth_Olsen1_%28cropped%29.jpg'},
     // tslint:disable-next-line:max-line-length
