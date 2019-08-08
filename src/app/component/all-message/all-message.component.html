@@ -1,37 +1,37 @@
 <div id="all-message">
-  <div>
-    <div *ngFor="let mes of messageList"
-         [class.right-align]="mes.name === loginUser.name">
-      <!--        <div>-->
-      <!--          <a href="#">  {{mes.name}}</a>-->
-      <!--        </div>-->
-      <div>{{mes.createdTime}} </div>
-      <div class="d-flex justify-content-start mb-4">
-        <div>
-          <img src="{{mes.image}}" alt="userImage" width="40px" height="40px"
-               class="example z-depth-2">
-        </div>
-        <div class="msg_cotainer">
-          <!--          <span><img src="{{mes.image}}" alt="userImage" width="40px" height="40px"-->
-          <!--                                             class="example z-depth-2"></span>-->
-          {{mes.content}}
-          <span class="msg_time">8:40 AM, Today</span>
-        </div>
+  <!--  <div>-->
+  <div *ngFor="let mes of messageList"
+       [class.right-align]="mes.name === loginUser.name">
+    <!--        <div>-->
+    <!--          <a href="#">  {{mes.name}}</a>-->
+    <!--        </div>-->
+    <div>{{mes.createdTime}} </div>
+    <div class="d-flex justify-content-start mb-4">
+      <div>
+        <img src="{{mes.image}}" alt="userImage" width="40px" height="40px"
+             class="example z-depth-2">
       </div>
-      <div class="d-flex justify-content-end mb-4">
-
-        <div class="msg_cotainer_send">
-          <!--          <span><img src="{{mes.image}}" alt="userImage" width="40px" height="40px"-->
-          <!--                                             class="example z-depth-2"></span>-->
-          {{mes.content}}
-          <span class="msg_time_send">8:40 AM, Today</span>
-        </div>
-        <div>
-          <img src="{{mes.image}}" alt="userImage" width="40px" height="40px"
-               class="example z-depth-2">
-        </div>
-        <!--        <div class="msg_cotainer_send">{{mes.content}}</div>-->
+      <div class="msg_cotainer">
+        <!--          <span><img src="{{mes.image}}" alt="userImage" width="40px" height="40px"-->
+        <!--                                             class="example z-depth-2"></span>-->
+        {{mes.content}}
+        <span class="msg_time">8:40 AM, Today</span>
       </div>
     </div>
+    <div class="d-flex justify-content-end mb-4">
+
+      <div class="msg_cotainer_send">
+        <!--          <span><img src="{{mes.image}}" alt="userImage" width="40px" height="40px"-->
+        <!--                                             class="example z-depth-2"></span>-->
+        {{mes.content}}
+        <span class="msg_time_send">8:40 AM, Today</span>
+      </div>
+      <div>
+        <img src="{{mes.image}}" alt="userImage" width="40px" height="40px"
+             class="example z-depth-2">
+      </div>
+      <!--        <div class="msg_cotainer_send">{{mes.content}}</div>-->
+    </div>
   </div>
+  <!--  </div>-->
 </div>
