@@ -23,6 +23,7 @@ export class NewMessageComponent implements OnInit {
     this.message.content = messageText;
     this.messageService.addMessage(this.message);
     this.messageService.scrollAllMessage();
+    // this.messageService.clearContent();
   }
 
   constructor(private messageService: MessageService, private userService: UserService) {
