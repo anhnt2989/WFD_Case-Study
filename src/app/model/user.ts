@@ -3,4 +3,5 @@ export interface IUser {
   name: string;
   password: string;
   status: string;
+  userImg: string;
 }

@@ -2,7 +2,7 @@
   <h1 class="text-center m-4">Welcome to Angular Group Messenger</h1>
   <div class="row">
     <div class="col-sm-4 mt-4 pt-5 offset-sm-4">
-      <h3 class="text-center">Please log in to chat</h3>
+      <h3 class="text-center">Log in</h3>
       <form [formGroup]="loginUserForm"
             (ngSubmit)="onSubmit()"
             class="mt-5" novalidate>
@@ -33,9 +33,9 @@
                   loginUserForm.controls.username.touched)">
         </div>
         <div *ngIf="loginUserForm.controls.password.invalid &&
-                loginUserForm.controls.password.touched" class="alert alert-danger">Password's invalid</div>
+                loginUserForm.controls.password.touched" class="alert alert-danger">Invalid password</div>
         <div *ngIf="loginUserForm.controls.password.errors.required && (loginUserForm.controls.password.dirty||
-                loginUserForm.controls.password.touched) " class="alert alert-danger">Password Required
+                loginUserForm.controls.password.touched) " class="alert alert-danger">Required password
         </div>
         <div *ngIf="loginUserForm.controls.password.errors.minlength" class="alert alert-danger">Minimum 4
           characters

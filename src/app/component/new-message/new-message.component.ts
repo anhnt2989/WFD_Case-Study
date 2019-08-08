@@ -21,7 +21,6 @@ export class NewMessageComponent implements OnInit {
   onSubmit(messageText: string) {
     this.message.name = this.userService.loginUser.name;
     this.message.content = messageText;
-    // console.log(this.message);
     this.messageService.addMessage(this.message);
     this.messageService.scrollAllMessage();
   }

@@ -1,6 +1,6 @@
 export interface IMessage {
   createdTime: any;
-  image: any;
+  image: string;
   content: string;
   username: string;
   name: string;
