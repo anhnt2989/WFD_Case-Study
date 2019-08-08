@@ -1,16 +1,22 @@
 <div id="all-message">
-  <ul class="list-group-flush">
-    <li *ngFor="let mes of messageList" class="list-group-item list-group-item-action"
-        [class.right-align]="mes.name === loginUser.name">
-      <div id="message" class="list-group-item list-group-item-action">
-        <div>
-          <span><img src="{{mes.image}}" alt="userImage" width="40px" height="40px" class="example z-depth-2"></span>
-          <a href="#">  {{mes.name}}</a>
-        </div>
+  <div>
+    <div *ngFor="let mes of messageList"
+         [class.right-align]="mes.name === loginUser.name">
+      <div id="message" class="d-flex justify-content-start mb-4">
+<!--        <div>-->
+<!--          <a href="#">  {{mes.name}}</a>-->
+<!--        </div>-->
         <div>{{mes.createdTime}} </div>
-        <div> </div>
-        <div>{{mes.content}}</div>
+        <div>
+          <img src="{{mes.image}}" alt="userImage" width="40px" height="40px"
+               class="example z-depth-2">
+        </div>
+        <div class="msg_cotainer">
+<!--          <span><img src="{{mes.image}}" alt="userImage" width="40px" height="40px"-->
+<!--                                             class="example z-depth-2"></span>-->
+          {{mes.content}}</div>
+        <!--        <div class="msg_cotainer_send">{{mes.content}}</div>-->
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>
