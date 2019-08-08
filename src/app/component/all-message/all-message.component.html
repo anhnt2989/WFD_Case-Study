@@ -1,0 +1,12 @@
+<div id="all-message">
+  <ul class="list-group-flush">
+    <li *ngFor="let mes of messageList" class="list-group-item list-group-item-action"
+        [class.right-align]="mes.name === loginUser.name">
+      <div id="message" class="list-group-item list-group-item-action">
+        <div><span>{{mes.image}}</span><a href="#">{{mes.name}}</a></div>
+        <div>{{mes.createdTime}}</div>
+        <div>{{mes.content}}</div>
+      </div>
+    </li>
+  </ul>
+</div>

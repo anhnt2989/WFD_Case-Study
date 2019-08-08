@@ -1,0 +1,7 @@
+<form class="md-form md-form-row">
+  <input type="text" #messageText
+         class="form-control form-control-lg col-sm-9" name="new-message" placeholder="Type your message">
+  <a type="submit" (click)="onSubmit(messageText.value); messageText.value='';">
+    <button style="border-radius: 50px" class="btn btn-primary"><i class="fa fa-paper-plane"></i></button>
+  </a>
+</form>

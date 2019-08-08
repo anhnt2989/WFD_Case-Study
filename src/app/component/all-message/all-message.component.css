@@ -1,0 +1,21 @@
+#all-message {
+  display: block;
+  height: 500px;
+  overflow: scroll;
+}
+
+#message {
+  display: inline-block;
+  padding: 0.3rem;
+}
+
+.right-align {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+a {
+  /*text-decoration: none;*/
+  color: orange;
+}

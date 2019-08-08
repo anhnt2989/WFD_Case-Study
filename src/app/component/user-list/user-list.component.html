@@ -1,0 +1,12 @@
+<h4>User List</h4>
+<div *ngFor="let user of userList">
+  <hr>
+  <div>{{user.name}}</div>
+  <div><a href="#">
+    <span *ngIf="user.status ==='online'" class="dot" id="online" aria-hidden="true"></span>
+    <span *ngIf="user.status ==='offline'" class="dot" id="offline" aria-hidden="true"></span>
+    <span *ngIf="user.status ==='idle'" class="dot" id="idle" aria-hidden="true"></span>
+    <span>    {{user.status}}</span>
+  </a>
+  </div>
+</div>
