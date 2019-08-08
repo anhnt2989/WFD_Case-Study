@@ -59,7 +59,10 @@ a {
 img {
   border-radius: 50px;
 }
-
+#status {
+  text-decoration: none;
+  color: #1cff1d;
+}
 
 
 
