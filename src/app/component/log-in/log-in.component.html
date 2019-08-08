@@ -7,7 +7,7 @@
             (ngSubmit)="onSubmit()"
             class="mt-5" novalidate>
         <div class="md-form form-lg">
-          <i class="fas fa-user prefix"></i>
+<!--          <i class="fas fa-user prefix"></i>-->
           <input type="text" formControlName="username"
                  name="username" id="username"
                  class="form-control form-control-lg" mdbInput
@@ -24,7 +24,7 @@
         </div>
 
         <div class="md-form form-lg">
-          <i class="fa fa-lock prefix"></i>
+<!--          <i class="fa fa-lock prefix"></i>-->
           <input type="password" formControlName="password"
                  class="form-control form-control-lg"
                  name="password" id="password" mdbInput
@@ -41,9 +41,9 @@
         <div *ngIf="loginUserForm.controls.password.errors.minlength" class="alert alert-danger">Minimum 4
           characters
         </div>
-        <button type="submit" class="btn btn-success offset-sm-3">Log in</button>
+        <button type="submit" class="btn btn-success offset-sm-3" mdbWavesEffect>Log in</button>
         <a routerLink="/sign-up">
-          <button type="button" class="btn btn-primary offset-sm-1">Sign up</button>
+          <button type="button" class="btn btn-primary offset-sm-1" mdbWavesEffect>Sign up</button>
         </a>
         <div *ngIf="loginAttempt && !loginStatus" class="alert alert-danger">This account does not exist</div>
       </form>
