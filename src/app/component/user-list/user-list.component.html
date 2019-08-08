@@ -21,7 +21,9 @@
     <span *ngIf="user.status ==='online'" class="dot" id="online" aria-hidden="true"></span>
     <span *ngIf="user.status ==='offline'" class="dot" id="offline" aria-hidden="true"></span>
     <span *ngIf="user.status ==='idle'" class="dot" id="idle" aria-hidden="true"></span>
-    <span id="status">    {{user.status}}</span>
+    <span *ngIf="user.status ==='online'" id="onlineStt">    {{user.status}}</span>
+    <span *ngIf="user.status ==='offline'" id="offlineStt">    {{user.status}}</span>
+    <span *ngIf="user.status ==='idle'" id="idleStt">    {{user.status}}</span>
   </a>
   </div>
 </div>
