@@ -4,6 +4,8 @@
   background: #7F7FD5;
   background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
   background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+  padding-bottom: 170px;
+  padding-right: 50px;
 }
 button{
   width: 100px;
