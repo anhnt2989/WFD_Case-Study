@@ -1,7 +1,7 @@
 /*.page{*/
 /*  background: white;*/
 /*}*/
-.container-fluid {
+.row {
   height: 100%;
   width: 100%;
   background: #7F7FD5;

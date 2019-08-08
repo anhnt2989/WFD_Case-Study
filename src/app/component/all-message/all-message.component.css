@@ -34,9 +34,25 @@
   position: relative;
 }
 
-.img_cont_msg{
+.img_cont_msg {
   height: 40px;
   width: 40px;
+}
+
+.msg_time {
+  position: absolute;
+  left: 10px;
+  bottom: -15px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+}
+
+.msg_time_send {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
 }
 
 a {
