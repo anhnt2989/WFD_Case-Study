@@ -20,6 +20,7 @@ export class NewMessageComponent implements OnInit {
 
   onSubmit(messageText: string) {
     this.message.name = this.userService.loginUser.name;
+    this.message.image = this.userService.loginUser.userImg;
     this.message.content = messageText;
     this.messageService.addMessage(this.message);
     this.messageService.scrollAllMessage();
