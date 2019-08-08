@@ -1,12 +1,24 @@
-<form class="md-form md-form-row">
-<!--  <input type="text" #messageText-->
-<!--         class="form-control form-control-lg col-sm-9" name="new-message" placeholder="Type your message">-->
-  <div>
-    <mdb-icon fas icon="envelope" class="prefix"></mdb-icon>
-    <input #messageText mdbInput type="text" id="form1" class="form-control">
-    <label for="form1" class="">Type your message</label>
+<!--<form class="md-form md-form-row">-->
+<!--&lt;!&ndash;  <input type="text" #messageText&ndash;&gt;-->
+<!--&lt;!&ndash;         class="form-control form-control-lg col-sm-9" name="new-message" placeholder="Type your message">&ndash;&gt;-->
+<!--  <div>-->
+<!--    <mdb-icon fas icon="envelope" class="prefix"></mdb-icon>-->
+<!--    <input #messageText mdbInput type="text" id="form1" class="form-control">-->
+<!--    <label for="form1" class="">Type your message</label>-->
+<!--  </div>-->
+<!--  <a type="submit" (click)="onSubmit(messageText.value); messageText.value='';">-->
+<!--    <button style="border-radius: 100px" class="btn btn-primary"><i class="fa fa-paper-plane"></i></button>-->
+<!--  </a>-->
+<!--</form>-->
+
+<div class="card-footer">
+  <div class="input-group">
+    <div class="input-group-append">
+      <span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+    </div>
+    <input #messageText name="" class="form-control type_msg" placeholder="Type your message...">
+    <div class="input-group-append">
+      <span class="input-group-text send_btn"><a type="submit" (click)="onSubmit(messageText.value)"><i class="fas fa-location-arrow"></i></a></span>
+    </div>
   </div>
-  <a type="submit" (click)="onSubmit(messageText.value); messageText.value='';">
-    <button style="border-radius: 100px" class="btn btn-primary"><i class="fa fa-paper-plane"></i></button>
-  </a>
-</form>
+</div>
