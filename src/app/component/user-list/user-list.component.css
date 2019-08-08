@@ -31,6 +31,7 @@
   border-radius: 50%;
   display: inline-block;
   animation: ripple 1.8s infinite;
+  border:1px solid white;
 }
 
 #offline {
@@ -40,6 +41,7 @@
   border-radius: 50%;
   display: inline-block;
   animation: ripple 1.8s infinite;
+  border:1px solid white;
 }
 
 #idle {
@@ -49,6 +51,7 @@
   border-radius: 50%;
   display: inline-block;
   animation: ripple 1.8s infinite;
+  border:1px solid white;
 }
 
 a {
