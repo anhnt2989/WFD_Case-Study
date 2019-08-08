@@ -12,7 +12,7 @@ import {GroupviewComponent} from './component/groupview/groupview.component';
 import {SignUpComponent} from './component/sign-up/sign-up.component';
 import {UserComponent} from './component/user/user.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MDBBootstrapModule, MdbInput} from 'angular-bootstrap-md';
+import {MDBBootstrapModule} from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [

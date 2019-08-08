@@ -1,17 +1,22 @@
 <div>
   <span>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Charlize_Theron_Cannes_2015_2.jpg/300px-Charlize_Theron_Cannes_2015_2.jpg"
-             alt="userImg" width="50px" height="50px"></span>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Charlize_Theron_Cannes_2015_2.jpg/300px-Charlize_Theron_Cannes_2015_2.jpg"
+      alt="userImg" width="50px" height="50px" class="example z-depth-2">
+  </span>
 </div>
+
 <form class="form-inline md-form mr-auto mb-4">
   <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-  <button mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light" mdbWavesEffect type="submit">Search</button>
+  <button mdbBtn size="sm" gradient="blue" rounded="true" class="my-0 waves-light" mdbWavesEffect type="submit">Search
+  </button>
 </form>
 <div *ngFor="let user of userList">
   <hr>
-  <div><span><a href="#"><img src="{{user.userImg}}" width="30px" height="30px" alt="userImage"></a></span> <a
+  <div><span><a href="#"><img src="{{user.userImg}}" width="30px" height="30px" alt="userImage"
+                              class="example z-depth-2"></a></span> <a
     href="#" style="color: orange; width: 100%">  {{user.name}}</a></div>
-  <div><a href="#">
+  <div style="margin-left: 30px"><a href="#">
     <span *ngIf="user.status ==='online'" class="dot" id="online" aria-hidden="true"></span>
     <span *ngIf="user.status ==='offline'" class="dot" id="offline" aria-hidden="true"></span>
     <span *ngIf="user.status ==='idle'" class="dot" id="idle" aria-hidden="true"></span>
