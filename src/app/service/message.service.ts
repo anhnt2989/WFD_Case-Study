@@ -69,4 +69,12 @@ export class MessageService {
       $('#all-message').scrollTop(scrollHeight);
     });
   }
+
+  // timeGenerate() {
+  //   const time = new Date();
+  //   const hour = time.getHours();
+  //   const min = time.getMinutes();
+  //   const sec = time.getSeconds();
+  //   const date = time.getDate();
+  // }
 }
