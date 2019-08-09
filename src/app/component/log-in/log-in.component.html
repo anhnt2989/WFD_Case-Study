@@ -41,7 +41,7 @@
         <div *ngIf="loginUserForm.controls.password.errors.minlength" class="alert alert-danger">Minimum 4
           characters
         </div>
-        <button type="submit" class="btn btn-success offset-sm-3" mdbWavesEffect>Log in</button>
+        <button type="submit" class="btn btn-success offset-sm-3" mdbWavesEffect (click)="authService.login()">Log in</button>
         <a routerLink="/sign-up">
           <button type="button" class="btn btn-primary offset-sm-1" mdbWavesEffect>Sign up</button>
         </a>

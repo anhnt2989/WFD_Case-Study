@@ -4,20 +4,16 @@ import {Injectable} from '@angular/core';
 export class AuthService {
   user: any;
 
-  constructor()
+  constructor() {}
 
   isAuthenticate(): boolean {
     return !!this.user;
   }
 
-  login() {
-    this.user = {
-      userName: 'admin',
-      password: 'admin1'
-    };
-  }
-
-  logout() {
-    this.user = null;
-  }
+  // login() {
+  //   this.user = {
+  //     userName: 'admin',
+  //     password: 'admin1'
+  //   };
+  // }
 }

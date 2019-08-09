@@ -4,6 +4,7 @@ import {FormControl, FormGroup} from '@angular/forms';
 import {UserService} from '../../service/user.service';
 import {Router, Routes} from '@angular/router';
 import {Validators} from '@angular/forms';
+import {AuthService} from '../../service/auth.service';
 
 @Component({
   selector: 'app-log-in',
@@ -30,16 +31,16 @@ export class LogInComponent implements OnInit {
       status: 'offline',
       userImg: ''
     };
-    console.log(this.loginUserForm);
     if (this.userService.login(this.user)) {
       this.router.navigateByUrl('chat');
       this.loginStatus = true;
     } else {
       this.loginStatus = false;
     }
+
   }
 
-  constructor(private userService: UserService, private router: Router) {
+  constructor(private userService: UserService, private router: Router, private authService: AuthService) {
   }
 
   ngOnInit() {

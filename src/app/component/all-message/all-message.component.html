@@ -1,10 +1,7 @@
 <div id="all-message">
-  <!--  <div>-->
   <div *ngFor="let mes of messageList"
        [class.right-align]="mes.name === loginUser.name">
-    <!--        <div>-->
-    <!--          <a href="#">  {{mes.name}}</a>-->
-    <!--        </div>-->
+
     <div>{{mes.createdTime}} </div>
     <div class="d-flex justify-content-start mb-4">
       <div>
@@ -12,8 +9,7 @@
              class="example z-depth-2">
       </div>
       <div class="msg_container">
-        <!--          <span><img src="{{mes.image}}" alt="userImage" width="40px" height="40px"-->
-        <!--                                             class="example z-depth-2"></span>-->
+
         {{mes.content}}
         <span class="msg_time">8:40 A.M, Today {{mes.createdTime}}</span>
       </div>
@@ -21,8 +17,6 @@
     <div class="d-flex justify-content-end mb-4">
 
       <div class="msg_container_send">
-        <!--          <span><img src="{{mes.image}}" alt="userImage" width="40px" height="40px"-->
-        <!--                                             class="example z-depth-2"></span>-->
         {{mes.content}}
         <span class="msg_time_send">8:40 A.M, Today</span>
       </div>
@@ -30,8 +24,6 @@
         <img src="{{mes.image}}" alt="userImage" width="40px" height="40px"
              class="example z-depth-2">
       </div>
-      <!--        <div class="msg_container_send">{{mes.content}}</div>-->
     </div>
   </div>
-  <!--  </div>-->
 </div>
